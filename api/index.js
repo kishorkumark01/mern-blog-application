@@ -30,10 +30,18 @@ app.listen(3000, () => {
   console.log('Server is running on port 3000!');
 });
 
+app.use((req, res, next) => {
+  res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+  next();
+});
+
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/post', postRoutes);
 app.use('/api/comment', commentRoutes);
+
+
 
 app.use(express.static(path.join(__dirname, '/client/dist')));
 
