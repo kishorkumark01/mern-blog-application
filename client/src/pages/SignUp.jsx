@@ -44,13 +44,12 @@ export default function SignUp() {
         <div className='flex-1'>
           <Link to='/' className='font-bold dark:text-white text-4xl'>
             <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-              Sahand's
+              Kishor's
             </span>
             Blog
           </Link>
           <p className='text-sm mt-5'>
-            This is a demo project. You can sign up with your email and password
-            or with Google.
+          Welcome to our blog application, your ultimate platform for creating, managing, and sharing your thoughts and stories with the world. Whether you're an individual blogger, a small business, or a large organization, our application is designed to help you maintain a dynamic and engaging online presence. Dive into a seamless blogging experience with a suite of features tailored for both content creators and readers.
           </p>
         </div>
         {/* right */}
