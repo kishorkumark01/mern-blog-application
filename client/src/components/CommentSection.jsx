@@ -138,7 +138,7 @@ export default function CommentSection({ postId }) {
       {currentUser && (
         <form
           onSubmit={handleSubmit}
-          className='border border-teal-500 rounded-md p-3'
+          className='border border-slate-300 dark:border-slate-700 rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-10 shadow-lg p-3 dark:p-3 dark:rounded-lg dark:backdrop-filter dark:backdrop-blur-lg dark:shadow-lg dark:bg-opacity-10'
         >
           <Textarea
             placeholder='Add a comment...'

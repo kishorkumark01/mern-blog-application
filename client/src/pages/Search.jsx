@@ -102,7 +102,7 @@ export default function Search() {
 
   return (
     <div className='flex flex-col md:flex-row'>
-      <div className='p-7 border-b md:border-r md:min-h-screen border-gray-500'>
+      <div className='p-7 border-b md:border-r md:min-h-screen border-gray-200 rounded-md backdrop-filter backdrop-blur-lg shadow-md bg-opacity-10 dark:p-7 dark:border-slate-800 dark:rounded-lg dark:backdrop-filter dark:backdrop-blur-lg dark:shadow-lg dark:bg-opacity-10 dark:bg-slate-400'>
         <form className='flex flex-col gap-8' onSubmit={handleSubmit}>
           <div className='flex   items-center gap-2'>
             <label className='whitespace-nowrap font-semibold'>
@@ -145,9 +145,9 @@ export default function Search() {
           </Button>
         </form>
       </div>
-      <div className='w-full'>
-        <h1 className='text-3xl font-semibold sm:border-b border-gray-500 p-3 mt-5 '>
-          Posts results:
+      <div className='w-full border p-8 rounded-lg backdrop-filter shadow-lg backdrop-blur-md bg-opacity-10 dark:p-8 dark:rounded-lg dark:backdrop-filter dark:shadow-lg dark:backdrop-blur-lg dark:bg-opacity-10 dark:border-slate-800'>
+        <h1 className='text-3xl font-semibold sm:border-b border-slate-100 dark:border-gray-900 p-[0px] mt-4 '>
+          Posts results
         </h1>
         <div className='p-7 flex flex-wrap gap-4'>
           {!loading && posts.length === 0 && (

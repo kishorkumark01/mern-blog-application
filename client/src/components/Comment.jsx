@@ -50,7 +50,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
     }
   };
   return (
-    <div className='flex p-4 border-b dark:border-gray-600 text-sm'>
+    <div className='flex p-4 border-b border-slate-500 dark:border-gray-600 text-sm'>
       <div className='flex-shrink-0 mr-3'>
         <img
           className='w-10 h-10 rounded-full bg-gray-200'
@@ -97,7 +97,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
         ) : (
           <>
             <p className='text-gray-500 pb-2'>{comment.content}</p>
-            <div className='flex items-center pt-2 text-xs border-t dark:border-gray-700 max-w-fit gap-2'>
+            <div className='flex items-center pt-[0px] text-xs max-w-fit gap-2'>
               <button
                 type='button'
                 onClick={() => onLike(comment._id)}
