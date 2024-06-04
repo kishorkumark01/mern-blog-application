@@ -21,10 +21,7 @@ export default function About() {
               them as well. We believe that a community of learners can help
               each other grow and improve.
             </p>
-            <p>
-             
-
-            </p>
+      
           </div>
         </div>
       </div>
