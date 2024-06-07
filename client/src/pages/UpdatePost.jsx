@@ -130,6 +130,7 @@ export default function UpdatePost() {
             value={formData.category}
           >
             <option value='uncategorized'>Uncategorized</option>
+            <option value='healthAndwellness'>Health and Wellness Blog</option>
             <option value='travel'>Travel Blog</option>
               <option value='food'>Food Blog</option>
               <option value='lifestyle'>LifeStyle Blog</option>
